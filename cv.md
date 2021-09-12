@@ -5,7 +5,7 @@ Abay, 150, 28 flat/ Almaty,Kazakhstan, Cell(+77082587588),(yamuuzz@gmail.com)
 
 # **EXPERIENCE**
 * Clinic Mobile app for Android (making an appointment to the doctor)
-* Cargo Mobile app for Android (for ordering a car)
+* Cargo Mobile app for Android (for ordering a taxi/cargo vehicle)
 
 # **EDUCATION**
  * ITMO UNIVERSITY (https://itmo.ru/), BSc Optoelectonics, 2007
