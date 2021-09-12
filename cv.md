@@ -1,5 +1,5 @@
 # **ABDRAYEV ALMAZ**
-ANDROID Developer
+FRONTEND/ANDROID Developer
 
 Abay, 150, 28 flat/ Almaty,Kazakhstan, Cell(+77082587588),(yamuuzz@gmail.com)
 
