@@ -14,7 +14,7 @@
 <div class="main_vertical">
    <main class="cv">
     <section class="section_item">
-        <h2 class="cosmos">About</h2>
+        
         <header class="header">
             <figure class="photo">
                 <img src="images/almaz.jpg" alt="Almaz Abdrayev" width="160px" height="190px">
@@ -63,7 +63,7 @@
                 <li>English: A2</li>
             </ul>    
         </article>
-        <div class="rss"></div>
+        
     </section>
 
     <section class="section_item">
@@ -78,7 +78,7 @@
                         <span class="strong">09/2021</span> – <span class="strong">04/2021</span>
                     </div>
                     <div>
-                        <span class="strong">Rolling Scopes School</span>
+                        <span>Rolling Scopes School</span>
                     </div>
                 </div>
                 <div class="description__item2">
@@ -91,7 +91,7 @@
                         <span class="strong">11/2020 – 05/2021</span>
                     </div>
                     <div>
-                        <span class="strong">JavaRush.ru</span>
+                        <span>JavaRush.ru</span>
                     </div>
                 </div>
                 <div class="description__item2">
@@ -117,15 +117,16 @@
 
         <article class="code_samples">
             <h4>Code samples</h4>
-            <p>
-                Available on github
-            </p>
+            
+                <div>
+                    <a href="https://github.com/yamuz/samples/blob/main/absentVowel.js">
+                        https://github.com/yamuz/samples
+                    </a>
+                    
+                </div>
         </article>
-
-        
+  
     </section>
-
-    
    </main> 
 
    <footer class="cv">
@@ -148,230 +149,4 @@
 </div>
 
 </body>
-
-<script>
-
-function loadScript(url)
-{    
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    head.appendChild(script);
-}
-
-/*loadScript("codewars/absent-vowel.js")
-loadScript("codewars/get-the-middle-character.js")
-loadScript("codewars/highest_Lowest.js")
-loadScript("codewars/jaden-casing-strings.js")
-loadScript("codewars/disemVowelTrolls.js")
-loadScript("codewars/isograms.js")
-loadScript("codewars/nickNameGenerator.js")
-loadScript("codewars/digitsExplosion.js")
-loadScript("codewars/multiples-of-3-or-5.js")*/
-//loadScript("codewars/headTail.js")
-loadScript("codewars/array-deep-count.js")
-loadScript("codewars/sorting-by-bits.js")
-</script>
-
-<script>
-
-function click2(){
-        let arr = [3, 8, 3, 6, 5, 7, 9, 1]
-        sortByBit(arr)
-        alert(arr)
-}
-
-
-/*
- let vasya = { name: "Вася", age: 25 };
-    let petya = { name: "Петя", age: 30 };
-    let masha = { name: "Маша", age: 28 };
-    let users = [ vasya, petya, masha ];
-    
-    alert(getAverAgeOfArray(users))
-*/
-function getAverAgeOfArray(arr) {
-    if (arr.length==0)
-        return NaN
-    let sum = arr.reduce((sum, current)=> sum + current.age, 0)
-    return Math.round(sum/arr.length)
-}
-
-function sortByAge(arr) {
-    arr.sort( (a, b) =>  a.age> b.age? 1: -1 )
-}
-
-function newArrayObj(arr){
-    let newArr = arr.map(x =>
-        ({ 
-            fullName : `${x.name} , ${x.age}`
-        })
-    );
-    return newArr
-}
-
-function newArray(arr){
-    let newArr = arr.map(x => x.name);
-    return newArr
-}
-/*
-let powerCalc = new Calculator("Yamuz Gmbh");
-    powerCalc.addMethod("*", (a, b) => a * b);
-    powerCalc.addMethod("/", (a, b) => a / b);
-    powerCalc.addMethod("**", (a, b) => a ** b);
-
-    let result = powerCalc.calculate("2 ** 3");
-    alert("2 ** 3 = " + result + "\n" + powerCalc.name); // 8
-*/
-class Calculator {
-   methods = {
-    "-": (a, b) => a - b,
-    "+": (a, b) => a + b
-   };
-
-  constructor(name) {
-    this.name = name;
-  }
-
-  calculate(str){
-     let arr = str.split(" ")
-     
-     if (arr.length < 3)
-        return NaN
-
-     let a = arr[0]
-     let b = arr[2]
-     let op = arr[1]
-
-     if (!this.methods[op] || isNaN(a) || isNaN(b)){
-        alert(this.methods[op]) 
-        return NaN;
-     }
-    return this.methods[op](a, b)
-         
-  }
-
-  addMethod(sign, func) {  
-    this.methods[sign] = func;
-  }
-}
-
-function copySorted(arr){
-  /*let arr = ["HTML", "JavaScript", "CSS"];
-  let sorted = copySorted(arr);
-  alert( sorted ); // CSS, HTML, JavaScript
-  alert( arr ); // HTML, JavaScript, CSS (без изменений)*/
-  
-  let newArr = [...arr].sort()
-  return newArr
-}
-
-function filterArray(arr, start, end){
-
-  for (let i = 0; i < arr.length; i++)
-  {
-    let val = arr[i];
-    console.log("do" + i);
-    // удалить, если за пределами интервала
-    if (val <= start || val >= end) {
-      arr.splice(i, 1);
-      i--;
-      console.log("posle" + i);
-    }
-  }
-  
-}
-
-function findMaxSubArray(arr){
-    let maxSum = 0
-    alert(arr)
-    
-    let sub
-    
-    try{
-      for (let i = 0; i < arr.length; i++) {
-        
-        for (let j = i+1; j < arr.length; j++) {
-            sub = arr.slice(i, j);
-            let sum = 0;
-            for (let j = 0; j < sub.length; j++) {
-                sum += sub[j];     
-            }
-            maxSum = Math.max(sum, maxSum)  
-        } 
-      }
-    } catch (err){
-        console.log(err)
-    }
-    console.log(maxSum)
-    
-}
-
-function sumInput(){   
-    let arr = []  
-    while ( true ){     
-          let value = prompt("Введите число", 0);
-          if (value === "" || value === null || !isFinite(value)) 
-              break;
-          arr.push(+value);   
-    }
-
-    
-    alert("1, 2: " + arr.slice(1, 6))
-    
-    if (arr.length >0){
-        let sum = 0
-        try {
-            arr.forEach(element => {
-            sum+=element
-            });
-        } catch(err){
-            console.log(err)
-        }
-
-        for (const el of arr) {
-            sum+=el
-        }
-        alert("sum : " + sum)
-    } else {
-        alert("arr is empty")
-    }
-       
-}
-
-function fnArr(){
-    let arr = ["a", "b"];
-
-    arr.push(function() {
-      alert( this );
-    })
-
-    arr[2]();
-}
-
-
-
-function multiplyNumeric() {
-        let styles =["Джаз","Блюз"]
-        styles.push("Рок-н-ролл") //Классика
-
-        let num = Math.trunc(styles.length/2)
-        styles[num] = "Классика"       
-        alert(styles)
-
-        alert(styles.shift())
-        alert(styles)
-
-        styles.unshift("Рэп","Регги")
-        alert(styles)
-
-}
-</script>
-
-<script>
-
-
-
-</script>
 </html>
