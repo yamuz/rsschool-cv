@@ -3,7 +3,7 @@ FRONTEND/ANDROID Developer
 
 Almaty,Kazakhstan, Cell(+77082587588),(yamuuzz@gmail.com)
 
-![almaz](https://user-images.githubusercontent.com/5288027/133979482-3e5bc623-5e88-4edd-a3a6-e7ef3212c4b8.jpg)
+![almaz_small](https://user-images.githubusercontent.com/5288027/133981647-6daccb0c-25fa-45ab-ae21-567bd20ffd26.jpg)
 
 
 # **EXPERIENCE**
