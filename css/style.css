@@ -1,0 +1,63 @@
+.main_vertical {
+  display: table-row-group;
+  border: black solid 1px;
+  -webkit-box-shadow: 1px 10px 100px 5px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 1px 10px 100px 5px rgba(0, 0, 0, 0.49);
+  box-shadow: 1px 10px 100px 5px rgba(0, 0, 0, 0.49);
+  background-color: rgba(6, 223, 223, 0.109);
+}
+
+body {
+  max-width: 65%;
+  margin: auto;
+}
+.photo {
+  margin-top: 30px;
+}
+
+.strong {
+  font-weight: bold;
+}
+.cv {
+  display: table-row;
+}
+.section_item {
+  float: left;
+  margin: 30px;
+}
+
+.footer_list {
+  width: 100%;
+  text-align: center;
+}
+.description {
+  margin: 20px;
+}
+
+.footer_list_item {
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+​ .underlined-blue {
+  width: 50%;
+  height: 0.05rem;
+  margin-top: 0.5rem;
+  background-color: rgb(41, 22, 65);
+  margin-bottom: 2rem;
+}
+.rss {
+  margin-top: 50px;
+  width: 100%;
+  height: 65px;
+  background-image: url("images/rs_school_js.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer_list {
+  width: 100%;
+  margin: 0 auto;
+
+  background: #f0e68c;
+}
