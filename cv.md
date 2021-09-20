@@ -1,7 +1,10 @@
 # **ABDRAYEV ALMAZ**
 FRONTEND/ANDROID Developer
 
-Abay, 150, 28 flat/ Almaty,Kazakhstan, Cell(+77082587588),(yamuuzz@gmail.com)
+Almaty,Kazakhstan, Cell(+77082587588),(yamuuzz@gmail.com)
+
+![almaz](https://user-images.githubusercontent.com/5288027/133979482-3e5bc623-5e88-4edd-a3a6-e7ef3212c4b8.jpg)
+
 
 # **EXPERIENCE**
 * Clinic Mobile app for Android (making an appointment to the doctor)
@@ -27,6 +30,7 @@ Abay, 150, 28 flat/ Almaty,Kazakhstan, Cell(+77082587588),(yamuuzz@gmail.com)
 # **CODE SAMPLES
 
 **JAVASCRIPT**:
+
 function absentVowel(x){
                         const vowels = new Map([["a",0],["e",0], ["i",0], ["o",0], ["u",0]])
                     
@@ -48,9 +52,9 @@ function absentVowel(x){
 }
 
 **JAVA**:
+
 import java.io.*;
-import java.util.zip.*;
-  
+import java.util.zip.*;  
 public class Program {
   
     public static void main(String[] args) {
